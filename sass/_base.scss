@@ -1,0 +1,39 @@
+
+@mixin respond ($breakpoint) {
+    @if $breakpoint == phone {
+        @media (max-width: 37.5em) {@content};
+    }
+
+    @if $breakpoint == tab-port {
+        @media (max-width: 56.25em) {@content};
+    }
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(119, 119, 119, 0.265);
+    padding: 4rem;
+    min-width: 1200px;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    @include respond(tab-port) {
+        font-size: 50%;
+    }
+
+    @include respond(phone) {
+        font-size: 60%;
+    }
+}
+
+

@@ -1,0 +1,41 @@
+.nav {
+    padding-top: 2rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.header {
+    height: 57.5rem;
+    background-image: linear-gradient(to bottom right, rgba(38, 82, 121, 0.585), rgba(15, 46, 72, 0.85)), url(../img/back-img.jpg);
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.section {
+
+    &__services {
+        margin-top: 10rem;
+        padding: 0 10rem;
+    }
+
+    &__about {
+        margin-top: 10rem;
+        padding: 0 10rem;
+    }
+
+    &__form {
+        margin-top: 10rem;
+        padding: 0 20rem;
+    }
+}
+
+.footer {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    padding: 2rem 8rem;
+    background: rgba(15, 46, 72, 0.85);
+}
